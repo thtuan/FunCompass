@@ -12,9 +12,13 @@
 		AFF9D017217798A10038BB1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF9D015217798A10038BB1A /* Main.storyboard */; };
 		AFF9D019217798A40038BB1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF9D018217798A40038BB1A /* Assets.xcassets */; };
 		AFF9D01C217798A40038BB1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF9D01A217798A40038BB1A /* LaunchScreen.storyboard */; };
+		AFF9D024217804E10038BB1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF9D023217804E10038BB1A /* MapViewController.swift */; };
+		C6148A75F509AE485FBB17DC /* Pods_FunCompass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11CC7191F47B45CA5E2798 /* Pods_FunCompass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		649A3461A82B0939549B61B0 /* Pods-FunCompass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunCompass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunCompass/Pods-FunCompass.debug.xcconfig"; sourceTree = "<group>"; };
+		8A11CC7191F47B45CA5E2798 /* Pods_FunCompass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunCompass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF9D00E217798A10038BB1A /* FunCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF9D011217798A10038BB1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF9D013217798A10038BB1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		AFF9D018217798A40038BB1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF9D01B217798A40038BB1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFF9D01D217798A40038BB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF9D023217804E10038BB1A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F0F396D217D3AE042575DD33 /* Pods-FunCompass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunCompass.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunCompass/Pods-FunCompass.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6148A75F509AE485FBB17DC /* Pods_FunCompass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		742EF984C0E26BF63D988101 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				649A3461A82B0939549B61B0 /* Pods-FunCompass.debug.xcconfig */,
+				F0F396D217D3AE042575DD33 /* Pods-FunCompass.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AFF9D005217798A10038BB1A = {
 			isa = PBXGroup;
 			children = (
 				AFF9D010217798A10038BB1A /* FunCompass */,
 				AFF9D00F217798A10038BB1A /* Products */,
+				742EF984C0E26BF63D988101 /* Pods */,
+				CA1CECDC2953ACCBBC223F33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,21 @@
 			children = (
 				AFF9D011217798A10038BB1A /* AppDelegate.swift */,
 				AFF9D013217798A10038BB1A /* ViewController.swift */,
+				AFF9D023217804E10038BB1A /* MapViewController.swift */,
 				AFF9D015217798A10038BB1A /* Main.storyboard */,
 				AFF9D018217798A40038BB1A /* Assets.xcassets */,
 				AFF9D01A217798A40038BB1A /* LaunchScreen.storyboard */,
 				AFF9D01D217798A40038BB1A /* Info.plist */,
 			);
 			path = FunCompass;
+			sourceTree = "<group>";
+		};
+		CA1CECDC2953ACCBBC223F33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A11CC7191F47B45CA5E2798 /* Pods_FunCompass.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF9D020217798A40038BB1A /* Build configuration list for PBXNativeTarget "FunCompass" */;
 			buildPhases = (
+				01F8FB154E1DCA33D1710B3B /* [CP] Check Pods Manifest.lock */,
 				AFF9D00A217798A10038BB1A /* Sources */,
 				AFF9D00B217798A10038BB1A /* Frameworks */,
 				AFF9D00C217798A10038BB1A /* Resources */,
+				403BD90DD4C47A1535E1FF90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01F8FB154E1DCA33D1710B3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunCompass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		403BD90DD4C47A1535E1FF90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FunCompass/Pods-FunCompass-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunCompass/Pods-FunCompass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFF9D00A217798A10038BB1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AFF9D014217798A10038BB1A /* ViewController.swift in Sources */,
+				AFF9D024217804E10038BB1A /* MapViewController.swift in Sources */,
 				AFF9D012217798A10038BB1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +349,13 @@
 		};
 		AFF9D021217798A40038BB1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649A3461A82B0939549B61B0 /* Pods-FunCompass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5X6D39XXC;
 				INFOPLIST_FILE = FunCompass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +369,13 @@
 		};
 		AFF9D022217798A40038BB1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F396D217D3AE042575DD33 /* Pods-FunCompass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5X6D39XXC;
 				INFOPLIST_FILE = FunCompass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
